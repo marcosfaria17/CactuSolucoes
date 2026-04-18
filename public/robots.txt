@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cactusolucoes.com.br/sitemap.xml

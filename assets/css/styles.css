@@ -60,12 +60,16 @@ em { font-style: normal; color: var(--green-light); }
 /* ─── NAV ────────────────────────────────────────────────── */
 nav {
   position: fixed;
-  top: 0; left: 0; right: 0;
+  top: 0;
+  left: 52%;
+  transform: translateX(-54%);
+
   z-index: 100;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  width: min(calc(100% - 4rem), 1100px);
+  padding: 1rem 0;
   background: rgba(30,38,41,.92);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
@@ -79,18 +83,16 @@ nav {
   text-decoration: none;
 }
 
-/* Logo image — mix-blend-mode: lighten remove o fundo branco no fundo escuro */
 .nav-logo-img {
-  height: 48px;
+  height: 76px;
   width: auto;
   display: block;
-  
 }
+
 .footer-logo-img {
-  height: 40px;
+  height: 84px;
   width: auto;
   display: block;
-  
 }
 
 .nav-cta {
@@ -102,7 +104,7 @@ nav {
   text-decoration: none;
   font-size: .875rem;
   font-weight: 600;
-  padding: .6rem 1.25rem;
+  padding: .7rem 1.4rem;
   border-radius: 50px;
   transition: opacity .2s, transform .2s, box-shadow .2s;
   box-shadow: 0 6px 18px rgba(76,175,39,.18);
@@ -141,7 +143,6 @@ nav {
   z-index: 0;
 }
 
-/* animated grid */
 .hero-grid {
   position: fixed;
   inset: 0;
@@ -232,7 +233,6 @@ nav {
   font-weight: 300;
 }
 
-/* metrics strip */
 .hero-metrics {
   display: flex;
   gap: 3rem;
@@ -261,7 +261,6 @@ section {
 }
 
 /* ─── DOR ────────────────────────────────────────────────── */
-.dor-section {}
 .dor-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -368,7 +367,6 @@ section {
 }
 
 /* ─── COMO FUNCIONA ──────────────────────────────────────── */
-.como-section {}
 .steps {
   display: flex;
   flex-direction: column;
@@ -420,7 +418,7 @@ section {
 /* ─── CTA SECTION ────────────────────────────────────────── */
 .cta-section {
   text-align: center;
-  padding: 6rem 2rem 8rem;
+  padding: 4.5rem 2rem 4rem;
   position: relative;
 }
 .cta-section::before {
@@ -437,28 +435,32 @@ section {
 /* ─── FOOTER ─────────────────────────────────────────────── */
 footer {
   border-top: 1px solid var(--border);
-  padding: 3rem 2rem;
+  padding: 1.5rem 2rem 1.75rem;
   max-width: 1100px;
   margin: 0 auto;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   gap: 2rem;
   flex-wrap: wrap;
 }
-.footer-logo-wrap { display: flex; align-items: center; gap: .6rem; margin-bottom: .75rem; }
-
-
+.footer-logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  margin-bottom: 0;
+}
 .footer-info {
-  font-size: .85rem;
+  font-size: .95rem;
   color: var(--muted);
   line-height: 1.8;
   font-weight: 300;
+  left: -100%
 }
 .footer-copy {
-  font-size: .8rem;
+  font-size: .9rem;
   color: var(--muted);
-  align-self: flex-end;
+  align-self: center;
   font-weight: 300;
 }
 
@@ -502,11 +504,23 @@ body, button, input, textarea, select {
 
 /* ─── RESPONSIVE ─────────────────────────────────────────── */
 @media (max-width: 640px) {
-  nav { padding: .875rem 1.25rem; }
+  @media (max-width: 640px) {
+  nav {
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 2.5rem);
+    padding: .875rem 0;
+  }
   section { padding: 4rem 1.25rem; }
   .hero { padding: 7rem 1.25rem 4rem; }
   .hero-metrics { gap: 2rem; }
   .steps::before { display: none; }
-  .cta-section { padding: 4rem 1.25rem 6rem; }
-  footer { padding: 2.5rem 1.25rem; }
+  .cta-section { padding: 4rem 1.25rem 3rem; }
+  footer {
+    /* padding: 2rem 1.25rem;
+    align-items: flex-start; */
+  }
+  .footer-logo-img {
+    height: 120px;
+  }
 }

@@ -35,18 +35,23 @@
   <meta name="twitter:description" content="Análise de dados, automação e soluções tecnológicas para transformar operação em resultado.">
   <meta name="twitter:image" content="https://cactusolucoes.com.br/assets/images/og-image.png?v=1">
 
-  <!-- FAVICON -->
-  <link rel="icon" href="/assets/images/favicon.png" type="image/png">
+  <!-- FAVICON / APP ICONS -->
+  <link rel="icon" href="assets/images/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon-96x96.png">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+  <link rel="manifest" href="assets/images/site.webmanifest">
+  <meta name="theme-color" content="#1E2629">
 
   <!-- PERFORMANCE -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="assets/images/logo-light.svg" type="image/svg+xml">
 
   <!-- FONTS -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
 
   <!-- GOOGLE ANALYTICS -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XB99DJFZ4G"></script>
@@ -56,221 +61,339 @@
     gtag('js', new Date());
     gtag('config', 'G-XB99DJFZ4G');
   </script>
+
+  <!-- SCHEMA -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Cactu Soluções",
+    "url": "https://cactusolucoes.com.br/",
+    "logo": "https://cactusolucoes.com.br/assets/images/logo-dark.svg",
+    "image": "https://cactusolucoes.com.br/assets/images/og-image.png",
+    "description": "Cactu Soluções oferece análise de dados, automação de processos, dashboards e soluções tecnológicas para transformar dados em decisões e resultados.",
+    "telephone": "+5562981306841",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Goiânia",
+      "addressRegion": "GO",
+      "addressCountry": "BR"
+    }
+  }
+  </script>
 </head>
+
 <body>
+  <svg class="svg-sprite" aria-hidden="true" focusable="false">
+    <symbol id="icon-whatsapp" viewBox="0 0 24 24">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </symbol>
+  </svg>
 
-<!-- NAV -->
-<nav>
-    <a href="#" class="nav-logo">
-    <img src="./assets/images/logo.png" alt="Cactu Soluções em Dados" class="nav-logo-img">
+  <header class="site-header">
+    <nav class="header-inner" aria-label="Principal">
+      <a href="#" class="brand-link" aria-label="Cactu Soluções">
+        <img src="assets/images/logo-light.svg" alt="Cactu Soluções em Dados" class="brand-logo">
+      </a>
+
+      <a href="https://wa.me/5562981306841?text=Ol%C3%A1%2C%20acessei%20o%20site%20da%20Cactu%20e%20gostaria%20de%20entender%20como%20posso%20estruturar%20melhor%20os%20dados%20do%20meu%20neg%C3%B3cio." class="nav-cta" target="_blank" rel="noopener">
+        <svg aria-hidden="true" focusable="false">
+          <use href="#icon-whatsapp"></use>
+        </svg>
+        Falar no WhatsApp
+      </a>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <!-- HERO -->
+    <section class="hero section-shell" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <p class="hero-tag">Dados que geram resultado</p>
+
+        <h1 id="hero-title">
+          Você tem os dados.
+          <span>O que falta é <em>enxergar</em> o que eles dizem.</span>
+        </h1>
+
+        <p class="hero-sub">
+          A Cactu transforma dados bagunçados, planilhas confusas e processos manuais em respostas claras — para você decidir com visão, não com achismo.
+        </p>
+
+        <div class="hero-actions">
+          <a href="https://wa.me/5562981306841?text=Ol%C3%A1%2C%20acessei%20o%20site%20da%20Cactu%20e%20gostaria%20de%20entender%20como%20posso%20estruturar%20melhor%20os%20dados%20do%20meu%20neg%C3%B3cio." class="btn-primary" target="_blank" rel="noopener">
+            <svg aria-hidden="true" focusable="false">
+              <use href="#icon-whatsapp"></use>
+            </svg>
+            Quero analisar meu negócio
+          </a>
+
+          <span class="hero-note">No seu tempo, do seu jeito</span>
+        </div>
+
+        <div class="hero-metrics" aria-label="Indicadores">
+          <div class="metric-item">
+            <span class="metric-num">100%</span>
+            <span class="metric-label">Soluções sob medida</span>
+          </div>
+
+          <div class="metric-item">
+            <span class="metric-num">+10 anos</span>
+            <span class="metric-label">Experiência em análise de dados</span>
+          </div>
+
+          <div class="metric-item">
+            <span class="metric-num">0</span>
+            <span class="metric-label">Achismo nas decisões</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="visual-card visual-card-main">
+          <div class="visual-card-header">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="chart-wrap">
+            <div class="chart-bars">
+              <span class="bar bar-1"></span>
+              <span class="bar bar-2"></span>
+              <span class="bar bar-3"></span>
+              <span class="bar bar-4"></span>
+              <span class="bar bar-5"></span>
+            </div>
+
+            <div class="chart-line">
+              <span class="point point-1"></span>
+              <span class="point point-2"></span>
+              <span class="point point-3"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="visual-card visual-card-side">
+          <img src="assets/images/simbolo.svg" alt="">
+          <div class="side-lines">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <div class="visual-grid-card">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEMA -->
+    <section class="problem-section section-shell reveal" aria-labelledby="problem-title">
+      <div class="section-heading">
+        <p class="section-tag">// o problema</p>
+        <h2 id="problem-title" class="section-title">Você se reconhece<br>em algum desses?</h2>
+        <p class="section-desc">Esses são os sinais de quem tem dados mas não tem visão — e está deixando dinheiro na mesa por isso.</p>
+      </div>
+
+      <div class="dor-grid">
+        <article class="dor-item">
+          <span class="dor-icon" aria-hidden="true">📊</span>
+          <div class="dor-text">
+            <h3>Planilha enorme, nenhuma resposta</h3>
+            <p>Os dados existem, mas ninguém sabe o que fazer com eles. A planilha cresceu e virou um problema.</p>
+          </div>
+        </article>
+
+        <article class="dor-item">
+          <span class="dor-icon" aria-hidden="true">🎯</span>
+          <div class="dor-text">
+            <h3>Decisão tomada no achismo</h3>
+            <p>Sem indicadores claros, as escolhas importantes dependem de intuição. E isso tem um custo real.</p>
+          </div>
+        </article>
+
+        <article class="dor-item">
+          <span class="dor-icon" aria-hidden="true">⏱️</span>
+          <div class="dor-text">
+            <h3>Horas perdidas em tarefas manuais</h3>
+            <p>Copiar, colar, consolidar toda semana — trabalho repetitivo que poderia ser automatizado.</p>
+          </div>
+        </article>
+
+        <article class="dor-item">
+          <span class="dor-icon" aria-hidden="true">👁️</span>
+          <div class="dor-text">
+            <h3>Sem visão do resultado real</h3>
+            <p>Financeiro, comercial e operacional vivem em lugares diferentes. Ninguém enxerga o negócio inteiro de uma vez.</p>
+          </div>
+        </article>
+
+        <article class="dor-item">
+          <span class="dor-icon" aria-hidden="true">🏢</span>
+          <div class="dor-text">
+            <h3>Sem time de dados interno</h3>
+            <p>A operação cresce, a complexidade aumenta, mas não tem ninguém dedicado a organizar a informação.</p>
+          </div>
+        </article>
+
+        <article class="dor-item">
+          <span class="dor-icon" aria-hidden="true">🔍</span>
+          <div class="dor-text">
+            <h3>Problema existe, mas não aparece</h3>
+            <p>Prejuízo num produto, cliente problemático, custo fora de controle — o dado está lá, só ninguém viu ainda.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="services-section section-shell reveal" aria-labelledby="services-title">
+      <div class="section-heading section-heading-split">
+        <div>
+          <p class="section-tag">// o que fazemos</p>
+          <h2 id="services-title" class="section-title">Três frentes.<br>Um objetivo: <em>visão.</em></h2>
+        </div>
+
+        <p class="section-desc">Não entregamos relatório bonito. Entregamos a resposta que você precisava e não conseguia enxergar.</p>
+      </div>
+
+      <div class="servicos-grid">
+        <article class="servico-card">
+          <p class="servico-num">01 —</p>
+          <h3 class="servico-title">Análise de Dados</h3>
+          <p class="servico-desc">Independente de onde seus dados estão — numa planilha, num banco de dados, num sistema ou numa API — a gente chega até a fonte, extrai o que importa e entrega a resposta que você precisa.</p>
+
+          <div class="servico-tags">
+            <span class="tag">Planilhas</span>
+            <span class="tag">Bancos de dados</span>
+            <span class="tag">APIs</span>
+            <span class="tag">Sistemas internos</span>
+          </div>
+        </article>
+
+        <article class="servico-card">
+          <p class="servico-num">02 —</p>
+          <h3 class="servico-title">Planilhas Inteligentes</h3>
+          <p class="servico-desc">Estruturamos sua base e criamos dashboards prontos para uso — seu time só alimenta os dados e o resultado aparece na hora.</p>
+
+          <div class="servico-tags">
+            <span class="tag">Dashboard gerencial</span>
+            <span class="tag">Controle financeiro</span>
+            <span class="tag">Resultado por vendedor</span>
+            <span class="tag">Atualização simplificada</span>
+          </div>
+        </article>
+
+        <article class="servico-card">
+          <p class="servico-num">03 —</p>
+          <h3 class="servico-title">Automação de Processos</h3>
+          <p class="servico-desc">Eliminamos tarefas manuais repetitivas com scripts e rotinas que fazem o trabalho pesado por você.</p>
+
+          <div class="servico-tags">
+            <span class="tag">Automação com scripts</span>
+            <span class="tag">Consolidação de dados</span>
+            <span class="tag">Relatórios automáticos</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- COMO FUNCIONA -->
+    <section class="process-section section-shell reveal" aria-labelledby="process-title">
+      <div class="section-heading">
+        <p class="section-tag">// como funciona</p>
+        <h2 id="process-title" class="section-title">Simples e direto<br>ao ponto.</h2>
+        <p class="section-desc">Sem burocracia, sem contrato longo. Você me conta o problema e a gente resolve juntos.</p>
+      </div>
+
+      <ol class="steps">
+        <li class="step">
+          <span class="step-num">01</span>
+          <div class="step-content">
+            <h3>Você me conta o problema</h3>
+            <p>Uma conversa pelo WhatsApp ou pessoalmente. Sem formulário complicado, sem apresentação formal.</p>
+          </div>
+        </li>
+
+        <li class="step">
+          <span class="step-num">02</span>
+          <div class="step-content">
+            <h3>Eu analiso o ambiente</h3>
+            <p>Entendo seus dados, seus processos e o que você realmente precisa saber. Depois apresento uma proposta sob medida.</p>
+          </div>
+        </li>
+
+        <li class="step">
+          <span class="step-num">03</span>
+          <div class="step-content">
+            <h3>A gente trabalha junto</h3>
+            <p>Presencial ou remoto, no horário que funcionar pra você. Sem padrão engessado.</p>
+          </div>
+        </li>
+
+        <li class="step">
+          <span class="step-num">04</span>
+          <div class="step-content">
+            <h3>Você recebe resultado visível</h3>
+            <p>Não um arquivo bonito que ninguém entende. Uma solução que o time usa de verdade — e que te dá visão do negócio.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta-section section-shell reveal" aria-labelledby="cta-title">
+      <div class="cta-card">
+        <div class="cta-content">
+          <p class="section-tag">// vamos começar</p>
+          <h2 id="cta-title" class="section-title">Chega de decidir<br>no escuro.</h2>
+          <p class="section-desc">Me manda uma mensagem e a gente descobre o que os seus dados têm pra dizer sobre o seu negócio.</p>
+
+          <a href="https://wa.me/5562981306841?text=Ol%C3%A1%2C%20acessei%20o%20site%20da%20Cactu%20e%20gostaria%20de%20entender%20como%20posso%20estruturar%20melhor%20os%20dados%20do%20meu%20neg%C3%B3cio." class="btn-primary" target="_blank" rel="noopener">
+            <svg aria-hidden="true" focusable="false">
+              <use href="#icon-whatsapp"></use>
+            </svg>
+            Falar agora no WhatsApp
+          </a>
+        </div>
+
+        <div class="cta-brand-card" aria-hidden="true">
+          <img src="assets/images/logo-dark.svg" alt="">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a href="#" class="footer-brand" aria-label="Cactu Soluções">
+        <img src="assets/images/logo-light.svg" alt="Cactu Soluções em Dados">
+      </a>
+
+      <address class="footer-info">
+        Cactu Soluções<br>
+        CNPJ 50.848.900/0001-61<br>
+        (62) 98130-6841<br>
+        Goiânia, GO
+      </address>
+
+      <div class="footer-copy">© 2026 Cactu Soluções</div>
+    </div>
+  </footer>
+
+  <!-- WA FLOAT -->
+  <a href="https://wa.me/5562981306841?text=Ol%C3%A1%2C%20acessei%20o%20site%20da%20Cactu%20e%20gostaria%20de%20entender%20como%20posso%20estruturar%20melhor%20os%20dados%20do%20meu%20neg%C3%B3cio." class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg aria-hidden="true" focusable="false">
+      <use href="#icon-whatsapp"></use>
+    </svg>
   </a>
-  <a href="https://wa.me/5562981306841?text=Ol%C3%A1%2C%20acessei%20o%20site%20da%20Cactu%20e%20gostaria%20de%20entender%20como%20posso%20estruturar%20melhor%20os%20dados%20do%20meu%20neg%C3%B3cio." class="nav-cta" target="_blank" rel="noopener">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    Falar no WhatsApp
-  </a>
-</nav>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-grid"></div>
-
-  <div class="hero-tag">Dados que geram resultado</div>
-
-  <h1>Você tem os dados.<br>O que falta é<br><em>enxergar</em> o que<br>eles dizem.</h1>
-
-  <p class="hero-sub">
-    A Cactu transforma dados bagunçados, planilhas confusas e processos manuais em respostas claras — para você decidir com visão, não com achismo.
-  </p>
-
-  <div class="hero-actions">
-    <a href="https://wa.me/5562981306841?text=Ol%C3%A1%2C%20acessei%20o%20site%20da%20Cactu%20e%20gostaria%20de%20entender%20como%20posso%20estruturar%20melhor%20os%20dados%20do%20meu%20neg%C3%B3cio." class="btn-primary" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      Quero analisar meu negócio
-    </a>
-    <span class="hero-note">No seu tempo, do seu jeito</span>
-  </div>
-
-  <div class="hero-metrics">
-    <div class="metric-item">
-      <span class="metric-num">100%</span>
-      <span class="metric-label">Soluções sob medida</span>
-    </div>
-    <div class="metric-item">
-      <span class="metric-num">+10 anos</span>
-      <span class="metric-label">Experiência em análise de dados</span>
-    </div>
-    <div class="metric-item">
-      <span class="metric-num">0</span>
-      <span class="metric-label">Achismo nas decisões</span>
-    </div>
-  </div>
-</section>
-
-<!-- DOR -->
-<section class="dor-section reveal">
-  <p class="section-tag">// o problema</p>
-  <h2 class="section-title">Você se reconhece<br>em algum desses?</h2>
-  <p class="section-desc">Esses são os sinais de quem tem dados mas não tem visão — e está deixando dinheiro na mesa por isso.</p>
-
-  <div class="dor-grid">
-    <div class="dor-item">
-      <div class="dor-icon">📊</div>
-      <div class="dor-text">
-        <strong>Planilha enorme, nenhuma resposta</strong>
-        <span>Os dados existem, mas ninguém sabe o que fazer com eles. A planilha cresceu e virou um problema.</span>
-      </div>
-    </div>
-    <div class="dor-item">
-      <div class="dor-icon">🎯</div>
-      <div class="dor-text">
-        <strong>Decisão tomada no achismo</strong>
-        <span>Sem indicadores claros, as escolhas importantes dependem de intuição. E isso tem um custo real.</span>
-      </div>
-    </div>
-    <div class="dor-item">
-      <div class="dor-icon">⏱️</div>
-      <div class="dor-text">
-        <strong>Horas perdidas em tarefas manuais</strong>
-        <span>Copiar, colar, consolidar toda semana — trabalho repetitivo que poderia ser automatizado.</span>
-      </div>
-    </div>
-    <div class="dor-item">
-      <div class="dor-icon">👁️</div>
-      <div class="dor-text">
-        <strong>Sem visão do resultado real</strong>
-        <span>Financeiro, comercial e operacional vivem em lugares diferentes. Ninguém enxerga o negócio inteiro de uma vez.</span>
-      </div>
-    </div>
-    <div class="dor-item">
-      <div class="dor-icon">🏢</div>
-      <div class="dor-text">
-        <strong>Sem time de dados interno</strong>
-        <span>A operação cresce, a complexidade aumenta, mas não tem ninguém dedicado a organizar a informação.</span>
-      </div>
-    </div>
-    <div class="dor-item">
-      <div class="dor-icon">🔍</div>
-      <div class="dor-text">
-        <strong>Problema existe, mas não aparece</strong>
-        <span>Prejuízo num produto, cliente problemático, custo fora de controle — o dado está lá, só ninguém viu ainda.</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SERVIÇOS -->
-<section class="reveal">
-  <p class="section-tag">// o que fazemos</p>
-  <h2 class="section-title">Três frentes.<br>Um objetivo: <em>visão.</em></h2>
-  <p class="section-desc">Não entregamos relatório bonito. Entregamos a resposta que você precisava e não conseguia enxergar.</p>
-
-  <div class="servicos-grid">
-    <div class="servico-card">
-      <p class="servico-num">01 —</p>
-      <h3 class="servico-title">Análise de Dados</h3>
-      <p class="servico-desc">Independente de onde seus dados estão — numa planilha, num banco de dados, num sistema ou numa API — a gente chega até a fonte, extrai o que importa e entrega a resposta que você precisa.</p>
-      <div class="servico-tags">
-        <span class="tag">Planilhas</span>
-        <span class="tag">Bancos de dados</span>
-        <span class="tag">APIs</span>
-        <span class="tag">Sistemas internos</span>
-      </div>
-    </div>
-    <div class="servico-card">
-      <p class="servico-num">02 —</p>
-      <h3 class="servico-title">Planilhas Inteligentes</h3>
-      <p class="servico-desc">Estruturamos sua base e criamos dashboards prontos para uso — seu time só alimenta os dados e o resultado aparece na hora.</p>
-      <div class="servico-tags">
-        <span class="tag">Dashboard gerencial</span>
-        <span class="tag">Controle financeiro</span>
-        <span class="tag">Resultado por vendedor</span>
-        <span class="tag">Atualização simplificada</span>
-      </div>
-    </div>
-    <div class="servico-card">
-      <p class="servico-num">03 —</p>
-      <h3 class="servico-title">Automação de Processos</h3>
-      <p class="servico-desc">Eliminamos tarefas manuais repetitivas com scripts e rotinas que fazem o trabalho pesado por você.</p>
-      <div class="servico-tags">
-        <span class="tag">Automação com scripts</span>
-        <span class="tag">Consolidação de dados</span>
-        <span class="tag">Relatórios automáticos</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- COMO FUNCIONA -->
-<section class="como-section reveal">
-  <p class="section-tag">// como funciona</p>
-  <h2 class="section-title">Simples e direto<br>ao ponto.</h2>
-  <p class="section-desc">Sem burocracia, sem contrato longo. Você me conta o problema e a gente resolve juntos.</p>
-
-  <div class="steps">
-    <div class="step">
-      <div class="step-num">01</div>
-      <div class="step-content">
-        <strong>Você me conta o problema</strong>
-        <p>Uma conversa pelo WhatsApp ou pessoalmente. Sem formulário complicado, sem apresentação formal.</p>
-      </div>
-    </div>
-    <div class="step">
-      <div class="step-num">02</div>
-      <div class="step-content">
-        <strong>Eu analiso o ambiente</strong>
-        <p>Entendo seus dados, seus processos e o que você realmente precisa saber. Depois apresento uma proposta sob medida.</p>
-      </div>
-    </div>
-    <div class="step">
-      <div class="step-num">03</div>
-      <div class="step-content">
-        <strong>A gente trabalha junto</strong>
-        <p>Presencial ou remoto, no horário que funcionar pra você. Sem padrão engessado.</p>
-      </div>
-    </div>
-    <div class="step">
-      <div class="step-num">04</div>
-      <div class="step-content">
-        <strong>Você recebe resultado visível</strong>
-        <p>Não um arquivo bonito que ninguém entende. Uma solução que o time usa de verdade — e que te dá visão do negócio.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA FINAL -->
-<section class="cta-section reveal">
-  <p class="section-tag">// vamos começar</p>
-  <h2 class="section-title">Chega de decidir<br>no escuro.</h2>
-  <p class="section-desc">Me manda uma mensagem e a gente descobre o que os seus dados têm pra dizer sobre o seu negócio.</p>
-  <a href="https://wa.me/5562981306841?text=Ol%C3%A1%2C%20acessei%20o%20site%20da%20Cactu%20e%20gostaria%20de%20entender%20como%20posso%20estruturar%20melhor%20os%20dados%20do%20meu%20neg%C3%B3cio." class="btn-primary" target="_blank" rel="noopener" style="margin: 0 auto; display: inline-flex;">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    Falar agora no WhatsApp
-  </a>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <!-- <div>
-    <div class="footer-logo-wrap">
-      <img src="./assets/images/logo.png" alt="Cactu Soluções em Dados" class="footer-logo-img">
-    </div>
-  </div> -->
-  <div class="footer-info">
-    Cactu Soluções<br>
-    CNPJ 50.848.900/0001-61<br>
-    (62) 98130-6841<br>
-    Goiânia, GO
-  </div>
-  </div>
-  <div class="footer-copy">© 2026 Cactu Soluções</div>
-</footer>
-
-<!-- WA FLOAT -->
-<a href="https://wa.me/5562981306841?text=Ol%C3%A1%2C%20acessei%20o%20site%20da%20Cactu%20e%20gostaria%20de%20entender%20como%20posso%20estruturar%20melhor%20os%20dados%20do%20meu%20neg%C3%B3cio." class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">
-  <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-</a>
-
-  <script src="./assets/js/script.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>

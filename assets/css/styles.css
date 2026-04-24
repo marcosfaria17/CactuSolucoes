@@ -22,7 +22,7 @@
   --container: 1120px;
   --brand-logo-width: 176px;
   --brand-logo-mobile-width: 154px;
-  --footer-logo-width: 96px;
+  --footer-logo-width: 140px;
   --header-height: 120px;
   --hero-safe-top: 0px;
   --whatsapp: #25D366;
@@ -1030,5 +1030,89 @@ section {
   .reveal {
     opacity: 1;
     transform: none;
+  }
+}
+
+/* SECTION VIEWPORT FIT
+   Cada seção principal ocupa, no mínimo, uma viewport.
+   O conteúdo fica centralizado verticalmente sem travar crescimento natural. */
+.hero,
+.dor-section,
+.services-section,
+.como-section,
+.cta-section {
+  min-height: 100vh;
+  min-height: 100dvh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.hero .hero-content,
+.dor-section .section-inner,
+.services-section .section-inner,
+.como-section .section-inner,
+.cta-section .section-inner {
+  width: min(var(--container), 100%);
+  margin-block: auto;
+}
+
+.site-footer {
+  min-height: 42vh;
+  min-height: 42dvh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.site-footer .footer-container {
+  width: min(760px, 100%);
+  margin-block: auto;
+}
+
+@media (max-width: 580px) {
+  .hero,
+  .dor-section,
+  .services-section,
+  .como-section,
+  .cta-section {
+    min-height: 100vh;
+    min-height: 100dvh;
+    height: auto;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  .site-footer {
+    min-height: 38vh;
+    min-height: 38dvh;
+  }
+}
+
+/* HERO HEADER COMPENSATION
+   O header é sticky e ocupa espaço no fluxo da página.
+   Por isso, somente a hero deve considerar a altura do header
+   para centralizar o conteúdo dentro da área visível restante. */
+.hero {
+  min-height: calc(100vh - var(--header-height));
+  min-height: calc(100dvh - var(--header-height));
+  padding-top: clamp(2.35rem, 4vw, 3.8rem);
+  padding-bottom: clamp(2.35rem, 4vw, 3.8rem);
+}
+
+.hero .hero-content {
+  margin-block: auto;
+}
+
+@media (max-width: 580px) {
+  .hero {
+    min-height: calc(100vh - var(--header-height));
+    min-height: calc(100dvh - var(--header-height));
+    padding-top: clamp(1.75rem, 5vw, 2.2rem);
+    padding-bottom: clamp(1.95rem, 5vw, 2.35rem);
   }
 }

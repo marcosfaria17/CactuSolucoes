@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "export": "node export-creativos.js"
+  },
+  "devDependencies": {
+    "playwright": "^1.49.0"
+  }
+}

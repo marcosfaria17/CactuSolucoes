@@ -1,0 +1,170 @@
+{
+  "_schema": {
+    "config": "Configurações globais do gerador.",
+    "scale": "Escala do PNG. 4 gera 2160x2160 para feed. 6 gera ainda maior.",
+    "showWhatsappButton": "true mostra o botão de WhatsApp em todos os criativos. false remove. Pode ser sobrescrito por peça.",
+    "audience": "Público-alvo. Entra no nome final do arquivo.",
+    "enabled": "false ignora a peça sem apagar do JSON."
+  },
+  "config": {
+    "scale": 4,
+    "htmlFile": "base-criativo.html",
+    "outDir": "exports",
+    "showWhatsappButton": false,
+    "footer": "cactusolucoes.com.br · (62) 98130-6841",
+    "sectionLabel": "Trabalhamos com",
+    "flow": {
+      "items": [
+        "Planilha",
+        "Banco de dados",
+        "Sistema interno",
+        "API"
+      ],
+      "activeUntil": 2,
+      "result": "Visão do negócio"
+    },
+    "chips": [
+      {
+        "text": "Planilhas",
+        "color": "verde"
+      },
+      {
+        "text": "Banco de dados",
+        "color": "azul"
+      },
+      {
+        "text": "Sistemas"
+      },
+      {
+        "text": "APIs"
+      }
+    ]
+  },
+  "creatives": [
+    {
+      "name": "caos-invisivel",
+      "audience": "gestores",
+      "format": "feed",
+      "pill": "Gestão · Clareza · Controle",
+      "headline": "O problema não é\nfalta de dado.\nÉ falta de visão.",
+      "highlight": "falta de visão",
+      "sub": "Sua empresa já tem as informações. Só estão espalhadas, desorganizadas e inúteis.",
+      "cta": "Quero enxergar meu negócio"
+    },
+    {
+      "name": "empresa-no-escuro",
+      "audience": "donos-de-empresa",
+      "format": "feed",
+      "pill": "Gestão Inteligente",
+      "headline": "Você realmente sabe\no que está acontecendo\nna sua empresa?",
+      "highlight": "realmente sabe",
+      "sub": "Sem dados organizados, toda decisão vira aposta.",
+      "cta": "Preciso de clareza"
+    },
+    {
+      "name": "dashboard-falso",
+      "audience": "diretores",
+      "format": "feed",
+      "pill": "BI · Verdade de Dados",
+      "headline": "Dashboard bonito\nnão significa\ndecisão inteligente.",
+      "highlight": "não significa",
+      "sub": "Sem base confiável, qualquer gráfico vira maquiagem.",
+      "cta": "Quero dados confiáveis"
+    },
+    {
+      "name": "etl-invisivel",
+      "audience": "times-de-operacao",
+      "format": "feed",
+      "pill": "ETL · Integração · Automação",
+      "headline": "Se seu dado não se conecta,\nele não serve.",
+      "highlight": "não serve",
+      "sub": "Dados isolados não geram insight. Integração é o jogo.",
+      "cta": "Quero integrar tudo"
+    },
+    {
+      "name": "decisao-lenta",
+      "audience": "comercial",
+      "format": "feed",
+      "pill": "Velocidade · Estratégia",
+      "headline": "Quem decide mais rápido,\nfatura mais.",
+      "highlight": "decide mais rápido",
+      "sub": "Dados organizados aceleram decisões e aumentam resultado.",
+      "cta": "Quero acelerar minha empresa"
+    },
+    {
+      "name": "sem-botao-exemplo",
+      "audience": "institucional",
+      "format": "feed",
+      "pill": "Marca · Awareness",
+      "headline": "Dados claros.\nDecisões melhores.\nOperação mais leve.",
+      "highlight": "Decisões melhores",
+      "sub": "Exemplo de peça sem botão de WhatsApp, configurado só neste criativo.",
+      "cta": "",
+      "showWhatsappButton": false
+    },
+    {
+      "name": "rotina-caotica",
+      "audience": "operacoes",
+      "format": "story",
+      "pill": "Gestão · Tempo · Eficiência",
+      "headline": "Sua operação\nte controla?",
+      "highlight": "te controla",
+      "sub": "Quando tudo depende de planilha manual, o negócio trava.",
+      "pains": [
+        "Você confere tudo manualmente",
+        "Ninguém confia nos números",
+        "Relatórios demoram horas",
+        "Decisão sempre atrasada"
+      ],
+      "cta": "Resolver isso agora"
+    },
+    {
+      "name": "planilha-preso",
+      "audience": "administrativo",
+      "format": "story",
+      "pill": "Operação · Eficiência",
+      "headline": "Você ainda depende de planilha pra tudo?",
+      "highlight": "depende de planilha",
+      "sub": "Planilha não é estratégia. É sintoma de um processo que não funciona.",
+      "pains": [
+        "Dados desatualizados todo dia",
+        "Fórmulas que ninguém entende",
+        "Quem fez saiu da empresa",
+        "Tudo travado numa pessoa"
+      ],
+      "cta": "Sair da planilha de vez"
+    },
+    {
+      "name": "ceo-sem-visao",
+      "audience": "ceos",
+      "format": "story",
+      "pill": "Liderança · Estratégia",
+      "headline": "CEO sem visão de dados é piloto no escuro.",
+      "highlight": "piloto no escuro",
+      "sub": "Você não pode liderar o que não consegue enxergar.",
+      "pains": [
+        "Relatórios chegam tarde",
+        "Números divergem entre áreas",
+        "Decisão baseada em intuição",
+        "Board sem resposta clara"
+      ],
+      "cta": "Quero visibilidade total"
+    },
+    {
+      "name": "crescimento-cego",
+      "audience": "empresas-em-crescimento",
+      "format": "story",
+      "pill": "Escala · Crescimento",
+      "headline": "Crescer sem dado é só aumentar o tamanho do problema.",
+      "highlight": "aumentar o tamanho do problema",
+      "sub": "Escala amplifica tudo, inclusive o caos que você ainda não resolveu.",
+      "pains": [
+        "Operação que não escala com o time",
+        "Custo subindo sem saber o porquê",
+        "Área que cresce sem KPI claro",
+        "Expansão que vira prejuízo"
+      ],
+      "cta": "Quero crescer com controle"
+    }
+  ]
+}

@@ -12,17 +12,7 @@
     "outDir": "exports",
     "showWhatsappButton": false,
     "footer": "cactusolucoes.com.br · (62) 98130-6841",
-    "sectionLabel": "Trabalhamos com",
-    "flow": {
-      "items": [
-        "Planilha",
-        "Banco de dados",
-        "Sistema interno",
-        "API"
-      ],
-      "activeUntil": 2,
-      "result": "Visão do negócio"
-    },
+    "sectionLabel": "Organizamos dados que vêm de",
     "chips": [
       {
         "text": "Planilhas",
@@ -42,74 +32,183 @@
   },
   "creatives": [
     {
-      "name": "caos-invisivel",
-      "audience": "gestores",
+      "name": "caos-invisivel-feed",
+      "audience": "gestores-gerentes",
       "format": "feed",
       "pill": "Gestão · Clareza · Controle",
       "headline": "O problema não é\nfalta de dado.\nÉ falta de visão.",
       "highlight": "falta de visão",
-      "sub": "Sua empresa já tem as informações. Só estão espalhadas, desorganizadas e inúteis.",
+      "sub": "Sua empresa já tem informação suficiente. O que falta é transformar dados espalhados em leitura clara para decidir melhor.",
       "cta": "Quero enxergar meu negócio"
     },
     {
-      "name": "empresa-no-escuro",
-      "audience": "donos-de-empresa",
+      "name": "empresa-no-escuro-feed",
+      "audience": "donos-pequenas-empresas",
       "format": "feed",
       "pill": "Gestão Inteligente",
       "headline": "Você realmente sabe\no que está acontecendo\nna sua empresa?",
       "highlight": "realmente sabe",
-      "sub": "Sem dados organizados, toda decisão vira aposta.",
+      "sub": "Quando os números não conversam entre si, a gestão perde precisão e toda decisão vira tentativa.",
       "cta": "Preciso de clareza"
     },
     {
-      "name": "dashboard-falso",
-      "audience": "diretores",
+      "name": "dashboard-falso-feed",
+      "audience": "gestores-gerentes",
       "format": "feed",
       "pill": "BI · Verdade de Dados",
       "headline": "Dashboard bonito\nnão significa\ndecisão inteligente.",
       "highlight": "não significa",
-      "sub": "Sem base confiável, qualquer gráfico vira maquiagem.",
+      "sub": "Visual bonito sem dado confiável só disfarça o problema. BI bom começa antes do gráfico.",
       "cta": "Quero dados confiáveis"
     },
     {
-      "name": "etl-invisivel",
-      "audience": "times-de-operacao",
+      "name": "dados-desconectados-feed",
+      "audience": "gestores-gerentes",
       "format": "feed",
-      "pill": "ETL · Integração · Automação",
+      "pill": "Integração · Automação · Dados",
       "headline": "Se seu dado não se conecta,\nele não serve.",
       "highlight": "não serve",
-      "sub": "Dados isolados não geram insight. Integração é o jogo.",
-      "cta": "Quero integrar tudo"
+      "sub": "Planilhas, sistemas e bases isoladas travam a operação. Integração transforma informação solta em inteligência de negócio.",
+      "cta": "Quero integrar meus dados"
     },
     {
-      "name": "decisao-lenta",
-      "audience": "comercial",
+      "name": "dados-claros-operacao-leve-feed",
+      "audience": "gestores-gerentes",
       "format": "feed",
-      "pill": "Velocidade · Estratégia",
-      "headline": "Quem decide mais rápido,\nfatura mais.",
-      "highlight": "decide mais rápido",
-      "sub": "Dados organizados aceleram decisões e aumentam resultado.",
-      "cta": "Quero acelerar minha empresa"
-    },
-    {
-      "name": "sem-botao-exemplo",
-      "audience": "institucional",
-      "format": "feed",
-      "pill": "Marca · Awareness",
+      "pill": "Dados · Decisão · Eficiência",
       "headline": "Dados claros.\nDecisões melhores.\nOperação mais leve.",
       "highlight": "Decisões melhores",
-      "sub": "Exemplo de peça sem botão de WhatsApp, configurado só neste criativo.",
-      "cta": "",
-      "showWhatsappButton": false
+      "sub": "A Cactu organiza seus dados para reduzir ruído, acelerar análises e dar mais controle à gestão.",
+      "cta": "Quero uma operação mais clara"
     },
     {
-      "name": "rotina-caotica",
-      "audience": "operacoes",
+      "name": "rotina-caotica-feed",
+      "audience": "gestores-gerentes",
+      "format": "feed",
+      "pill": "Gestão · Tempo · Eficiência",
+      "headline": "Sua operação\nte controla?",
+      "highlight": "te controla",
+      "sub": "Quando tudo depende de conferência manual, o time perde tempo e a empresa perde ritmo.",
+      "cta": "Resolver isso agora"
+    },
+    {
+      "name": "planilha-preso-feed",
+      "audience": "donos-pequenas-empresas",
+      "format": "feed",
+      "pill": "Processos · Dados · Eficiência",
+      "headline": "Você ainda depende\nde planilha pra tudo?",
+      "highlight": "depende",
+      "sub": "Planilha ajuda até certo ponto. Depois vira gargalo, risco e retrabalho escondido.",
+      "cta": "Sair da planilha de vez"
+    },
+    {
+      "name": "lideranca-sem-visao-feed",
+      "audience": "donos-pequenas-empresas",
+      "format": "feed",
+      "pill": "Liderança · Estratégia",
+      "headline": "Liderar sem visão\nde dados é decidir\nno escuro.",
+      "highlight": "decidir no escuro",
+      "sub": "Você não pode conduzir a empresa com números atrasados, soltos ou contraditórios.",
+      "cta": "Quero visibilidade total"
+    },
+    {
+      "name": "crescimento-cego-feed",
+      "audience": "donos-pequenas-empresas",
+      "format": "feed",
+      "pill": "Escala · Controle · Crescimento",
+      "headline": "Crescer sem dado é só\naumentar o tamanho\ndo problema.",
+      "highlight": "aumentar o tamanho",
+      "sub": "Escala exige controle. Antes de crescer mais, sua empresa precisa enxergar melhor.",
+      "cta": "Quero crescer com controle"
+    },
+    {
+      "name": "caos-invisivel-story",
+      "audience": "gestores-gerentes",
+      "format": "story",
+      "pill": "Gestão · Clareza · Controle",
+      "headline": "O problema não é\nfalta de dado.\nÉ falta de visão.",
+      "highlight": "falta de visão",
+      "sub": "Informação espalhada não vira decisão. Vira ruído.",
+      "pains": [
+        "Cada área olha um número",
+        "Relatórios não batem",
+        "Decisões demoram demais",
+        "Ninguém sabe qual dado confiar"
+      ],
+      "cta": "Quero enxergar meu negócio"
+    },
+    {
+      "name": "empresa-no-escuro-story",
+      "audience": "donos-pequenas-empresas",
+      "format": "story",
+      "pill": "Gestão Inteligente",
+      "headline": "Você sabe mesmo\no que acontece\nna sua empresa?",
+      "highlight": "sabe mesmo",
+      "sub": "Sem dados organizados, a gestão vira aposta bem-intencionada.",
+      "pains": [
+        "Você depende de feeling",
+        "Os números chegam tarde",
+        "Cada relatório mostra uma coisa",
+        "A decisão fica sempre insegura"
+      ],
+      "cta": "Preciso de clareza"
+    },
+    {
+      "name": "dashboard-falso-story",
+      "audience": "gestores-gerentes",
+      "format": "story",
+      "pill": "BI · Verdade de Dados",
+      "headline": "Dashboard bonito\nnão salva\ndado ruim.",
+      "highlight": "dado ruim",
+      "sub": "Antes do gráfico impressionar, a base precisa ser confiável.",
+      "pains": [
+        "Indicadores não fecham",
+        "Gráficos escondem inconsistências",
+        "A origem do dado é confusa",
+        "O BI não sustenta decisão"
+      ],
+      "cta": "Quero dados confiáveis"
+    },
+    {
+      "name": "dados-desconectados-story",
+      "audience": "gestores-gerentes",
+      "format": "story",
+      "pill": "Integração · Automação · Dados",
+      "headline": "Dado isolado\nnão gera\ninteligência.",
+      "highlight": "não gera",
+      "sub": "Quando sistemas não conversam, a operação trabalha no escuro.",
+      "pains": [
+        "Planilhas fora do sistema",
+        "Bases duplicadas",
+        "Conferência manual demais",
+        "Informação presa em áreas diferentes"
+      ],
+      "cta": "Quero integrar meus dados"
+    },
+    {
+      "name": "dados-claros-operacao-leve-story",
+      "audience": "gestores-gerentes",
+      "format": "story",
+      "pill": "Dados · Decisão · Eficiência",
+      "headline": "Dados claros.\nDecisões melhores.\nOperação mais leve.",
+      "highlight": "Decisões melhores",
+      "sub": "Clareza operacional começa quando a informação certa chega no lugar certo.",
+      "pains": [
+        "Menos ruído entre áreas",
+        "Mais confiança nos números",
+        "Relatórios mais rápidos",
+        "Gestão com mais controle"
+      ],
+      "cta": "Quero uma operação mais clara"
+    },
+    {
+      "name": "rotina-caotica-story",
+      "audience": "gestores-gerentes",
       "format": "story",
       "pill": "Gestão · Tempo · Eficiência",
       "headline": "Sua operação\nte controla?",
       "highlight": "te controla",
-      "sub": "Quando tudo depende de planilha manual, o negócio trava.",
+      "sub": "Quando tudo depende de conferência manual, o negócio perde velocidade.",
       "pains": [
         "Você confere tudo manualmente",
         "Ninguém confia nos números",
@@ -119,50 +218,50 @@
       "cta": "Resolver isso agora"
     },
     {
-      "name": "planilha-preso",
-      "audience": "administrativo",
+      "name": "planilha-preso-story",
+      "audience": "donos-pequenas-empresas",
       "format": "story",
-      "pill": "Operação · Eficiência",
-      "headline": "Você ainda depende de planilha pra tudo?",
-      "highlight": "depende de planilha",
-      "sub": "Planilha não é estratégia. É sintoma de um processo que não funciona.",
+      "pill": "Processos · Dados · Eficiência",
+      "headline": "Sua empresa\nestá presa\nna planilha?",
+      "highlight": "presa",
+      "sub": "Planilha resolve o começo. Mas pode travar o crescimento.",
       "pains": [
         "Dados desatualizados todo dia",
         "Fórmulas que ninguém entende",
         "Quem fez saiu da empresa",
-        "Tudo travado numa pessoa"
+        "Tudo depende de uma pessoa"
       ],
       "cta": "Sair da planilha de vez"
     },
     {
-      "name": "ceo-sem-visao",
-      "audience": "ceos",
+      "name": "lideranca-sem-visao-story",
+      "audience": "donos-pequenas-empresas",
       "format": "story",
       "pill": "Liderança · Estratégia",
-      "headline": "CEO sem visão de dados é piloto no escuro.",
-      "highlight": "piloto no escuro",
-      "sub": "Você não pode liderar o que não consegue enxergar.",
+      "headline": "Liderar sem dados\né decidir\nno escuro.",
+      "highlight": "decidir",
+      "sub": "Você não pode comandar o que não consegue enxergar com clareza.",
       "pains": [
         "Relatórios chegam tarde",
         "Números divergem entre áreas",
         "Decisão baseada em intuição",
-        "Board sem resposta clara"
+        "Falta resposta clara sobre resultado"
       ],
       "cta": "Quero visibilidade total"
     },
     {
-      "name": "crescimento-cego",
-      "audience": "empresas-em-crescimento",
+      "name": "crescimento-cego-story",
+      "audience": "donos-pequenas-empresas",
       "format": "story",
-      "pill": "Escala · Crescimento",
-      "headline": "Crescer sem dado é só aumentar o tamanho do problema.",
-      "highlight": "aumentar o tamanho do problema",
-      "sub": "Escala amplifica tudo, inclusive o caos que você ainda não resolveu.",
+      "pill": "Escala · Controle · Crescimento",
+      "headline": "Crescer sem dado\né aumentar\no problema.",
+      "highlight": "aumentar",
+      "sub": "Escala sem controle só deixa o caos mais caro.",
       "pains": [
-        "Operação que não escala com o time",
-        "Custo subindo sem saber o porquê",
-        "Área que cresce sem KPI claro",
-        "Expansão que vira prejuízo"
+        "Operação não acompanha o crescimento",
+        "Custo sobe sem explicação",
+        "Área cresce sem KPI claro",
+        "Expansão vira retrabalho"
       ],
       "cta": "Quero crescer com controle"
     }

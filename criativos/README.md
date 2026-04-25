@@ -45,9 +45,9 @@ Ou em uma peça específica:
 ```
 
 
-## Fluxo do feed
+## Temas do feed
 
-No formato `feed`, os itens de `config.flow.items` aparecem abaixo do texto de apoio e antes do botão.
+No formato `feed`, os itens de `chips` aparecem abaixo do texto de apoio e antes do botão.
 
 ## Botão desligado
 
@@ -75,3 +75,27 @@ Ajustes principais no CSS:
 - `.story-base .main-copy { margin-top: 58px; }`
 
 Para subir mais, reduza esses valores. Para descer, aumente.
+
+
+## Estrutura limpa
+
+O campo `flow` foi removido porque ficou redundante com `chips`.
+
+Antes existiam dois campos para representar a mesma coisa:
+
+- `flow.items`
+- `chips`
+
+Agora use apenas:
+
+```json
+"sectionLabel": "Organizamos dados que vêm de",
+"chips": [
+  { "text": "Planilhas", "color": "verde" },
+  { "text": "Banco de dados", "color": "azul" },
+  { "text": "Sistemas" },
+  { "text": "APIs" }
+]
+```
+
+O mesmo bloco visual é usado no feed e no story.

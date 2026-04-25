@@ -9,7 +9,7 @@ const fs = require('fs');
 
   O fluxo agora é:
   - base-criativo.html  = corpo visual fixo
-  - criativos.json      = textos, público, config e variações
+  - criativos.json      = textos, público, temas/chips, config e variações
   - export-creativos.js = lê o JSON, injeta no HTML e exporta os PNGs
 
   Como usar:
@@ -27,6 +27,10 @@ const fs = require('fs');
   Botão do WhatsApp:
   - No config geral, use: "showWhatsappButton": true ou false
   - Em uma peça específica, use o mesmo campo para sobrescrever só aquela peça.
+
+  Temas/chips:
+  - Use "sectionLabel" para o rótulo.
+  - Use "chips" para os temas exibidos no feed e no story.
 */
 
 const CONFIG_FILE = 'criativos.json';
@@ -38,11 +42,6 @@ const FALLBACK_CONFIG = {
   showWhatsappButton: true,
   footer: 'cactusolucoes.com.br · (62) 98130-6841',
   sectionLabel: 'Trabalhamos com',
-  flow: {
-    items: ['Planilha', 'Banco de dados', 'Sistema interno', 'API'],
-    activeUntil: 2,
-    result: 'Visão do negócio'
-  },
   chips: [
     { text: 'Planilhas', color: 'verde' },
     { text: 'Banco de dados', color: 'azul' },
@@ -164,43 +163,6 @@ async function setHeadline(piece, headline, highlight) {
   }, { headline: headline || '', highlight });
 }
 
-async function renderFlow(piece, flow) {
-  const target = piece.locator('[data-slot="flow"]').first();
-  if (!(await target.count())) return;
-
-  await target.evaluate((el, flowData) => {
-    el.innerHTML = '';
-
-    if (!flowData || !Array.isArray(flowData.items) || !flowData.items.length) {
-      el.style.display = 'none';
-      return;
-    }
-
-    el.style.display = 'flex';
-    const activeUntil = Number.isInteger(flowData.activeUntil) ? flowData.activeUntil : flowData.items.length;
-
-    flowData.items.forEach((item, index) => {
-      const row = document.createElement('div');
-      row.className = 'flow-item';
-
-      const dot = document.createElement('div');
-      dot.className = index < activeUntil ? 'flow-dot on' : 'flow-dot';
-
-      row.append(dot, document.createTextNode(item));
-      el.appendChild(row);
-
-      const arrow = document.createElement('div');
-      arrow.className = 'flow-arrow';
-      el.appendChild(arrow);
-    });
-
-    const result = document.createElement('div');
-    result.className = 'flow-result';
-    result.innerHTML = '<svg width="9" height="9" viewBox="0 0 24 24" fill="none"><path d="M3 3v18h18" stroke="#4CAF27" stroke-width="2.5" stroke-linecap="round"/><path d="M7 16l4-5 4 3 5-7" stroke="#4CAF27" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
-    result.appendChild(document.createTextNode(flowData.result || 'Visão do negócio'));
-    el.appendChild(result);
-  }, flow);
-}
 
 async function renderPains(piece, pains = []) {
   const target = piece.locator('[data-slot="pains"]').first();
@@ -266,7 +228,6 @@ async function renderWhatsappButton(piece, creative, config) {
 }
 
 async function fillCreative(piece, creative, config) {
-  const flow = mergeConfig({ flow: config.flow }, { flow: creative.flow }).flow;
   const chips = creative.chips || config.chips;
 
   await setText(piece, 'pill', creative.pill, { hideWhenEmpty: true });
@@ -276,7 +237,6 @@ async function fillCreative(piece, creative, config) {
   await setText(piece, 'sectionLabel', creative.sectionLabel ?? config.sectionLabel, { hideWhenEmpty: true });
 
   await renderWhatsappButton(piece, creative, config);
-  await renderFlow(piece, flow);
   await renderPains(piece, creative.pains || []);
   await renderChips(piece, chips || []);
 }
